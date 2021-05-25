@@ -13,6 +13,8 @@ npm install
 
 ## Activation
 
+To daemonize the script, enabling it to run forever
+
 ```bash
 npm install pm2 -g
 pm2 start fileOrganizer.js
