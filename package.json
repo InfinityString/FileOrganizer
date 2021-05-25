@@ -1,0 +1,23 @@
+{
+  "name": "file_organizer",
+  "version": "1.0.0",
+  "description": "a small script to organize my downloads folder",
+  "main": "fileOrganizer.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InfinityString"
+  },
+  "keywords": [
+    "organize",
+    "files"
+  ],
+  "author": "InfinityString",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "mv": "^2.1.1"
+  }
+}
