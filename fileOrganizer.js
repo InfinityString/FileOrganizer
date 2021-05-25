@@ -43,22 +43,22 @@ fs.watch(downloads, () => {
 
       //move videos to /user/movies
       if (video_ext.includes(path.extname(file_name))) {
-        const dest = movies + "/" + file_name;
+        const dest = path.join(movies, file_name);
         move_file(source, dest);
       }
       //move text documents to /user/documents
       else if (text_ext.includes(path.extname(file_name))) {
-        const dest = docs + "/" + file_name;
+        const dest = path.join(docs, file_name);
         move_file(source, dest);
       }
       //move images to /user/pictures
       else if (image_ext.includes(path.extname(file_name))) {
-        const dest = images + "/" + file_name;
+        const dest = path.join(images, file_name);
         move_file(source, dest);
       }
       //move Apps to /user/Applications
       else if (apps_ext.includes(path.extname(file_name))) {
-        const dest = apps + "/" + file_name;
+        const dest = path.join(apps, file_name);
         move_file(source, dest);
       }
     });
